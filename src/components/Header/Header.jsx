@@ -17,7 +17,7 @@ const Header = () => {
           <img src={Logo} alt="logo" />
           <button>
             <svg
-              width="28"
+              width="29"
               height="24"
               viewBox="0 0 28 24"
               fill="none"
