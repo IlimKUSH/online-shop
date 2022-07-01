@@ -1,0 +1,28 @@
+.footer {
+  background: url("../../img/bg-footer.png");
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 750px;
+}
+
+.footer__right {
+  display: flex;
+  width: 340px;
+  justify-content: space-between;
+}
+.footer__right-phone {
+  display: flex;
+  align-items: center;
+}
+.footer__right-phone > img {
+  margin-right: 10px;
+}

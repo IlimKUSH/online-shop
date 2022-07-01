@@ -1,0 +1,54 @@
+.background {
+  background: url("../../img/bg.png") no-repeat;
+  height: 200px;
+  background-size: 100vw;
+  position: relative;
+}
+.bg__products {
+  position: relative;
+  margin-left: 60px;
+}
+.bg__container {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.hero__card {
+  display: flex;
+  background: #fcd5ba;
+  box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+  border-radius: 4px;
+  padding: 8px 30px;
+}
+.hero__card > p {
+  font-size: 16px;
+}
+.hero__card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 203px;
+}
+.hero__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__card-red {
+  width: 100%;
+  max-width: 573px;
+  background: #e5ffde;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px #e5ffde;
+}
+.hero__card-red > div {
+  width: 100%;
+  max-width: 260px;
+}
