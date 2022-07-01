@@ -5,7 +5,8 @@ import Main from "./components/Main/Main";
 const App = () => {
   return (
     <div>
-      {/* <Header /> */}
+       <Header />
+       <div>sdfghjkl</div>
       <Main />
     </div>
   );
