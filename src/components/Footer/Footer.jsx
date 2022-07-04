@@ -23,16 +23,16 @@ const Footer = () => {
               <p>Политика обработки персональных данных</p>
             </div>
             <div className="footer__right">
-              <a href="">
+              <a href="#">
                 <img src={Inst} alt="instagram" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src={Vk} alt="vk" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src={Fb} alt="facebook" />
               </a>
-              <a href="">
+              <a href="#">
                 <img src={Ok} alt="ok" />
               </a>
               <a className="footer__right-phone" href="Tel:8 800 777 33 33">
