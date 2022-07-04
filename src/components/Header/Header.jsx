@@ -8,37 +8,41 @@ import Heart from "../../img/heart.svg";
 import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
+import { Link } from "react-router-dom";
+import Main from "../Main/Main";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <img src={Logo} alt="logo" />
+          <Link to={"/"} element={<Main />}>
+            <img src={Logo} alt="logo" />
+          </Link>
           <button>
             <svg
               width="29"
-              height="24"
+              height="25"
               viewBox="0 0 28 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_1812_17810)">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H23C23.2761 11.5 23.5 11.7239 23.5 12C23.5 12.2761 23.2761 12.5 23 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
                   fill="white"
                 />
               </g>
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.5 6C4.5 5.72386 4.72386 5.5 5 5.5H23C23.2761 5.5 23.5 5.72386 23.5 6C23.5 6.27614 23.2761 6.5 23 6.5H5C4.72386 6.5 4.5 6.27614 4.5 6Z"
                 fill="white"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M4.5 18C4.5 17.7239 4.72386 17.5 5 17.5H23C23.2761 17.5 23.5 17.7239 23.5 18C23.5 18.2761 23.2761 18.5 23 18.5H5C4.72386 18.5 4.5 18.2761 4.5 18Z"
                 fill="white"
               />
@@ -50,8 +54,8 @@ const Header = () => {
                   width="27"
                   height="9"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"

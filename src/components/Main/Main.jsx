@@ -1,4 +1,6 @@
-import React, {useEffect} from "react";
+
+import React, { useEffect } from "react";
+
 
 import "./main.css";
 import Products from "../../img/products.png";
@@ -10,6 +12,7 @@ import Flowers from "../../img/flowers.png";
 
 import {useNavigate} from "react-router-dom";
 import List from "../List/List";
+
 
 const Main = () => {
     const navigate = useNavigate()
@@ -68,9 +71,21 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+
+          </div>
+          <div className="article__card">
+            <img src={Flowers} alt="doctor" />
+            <div className="article__text">
+              <p>08.03.2022</p>
+              <h4>Весеннее настроение для каждой </h4>
+              <p className="article__info">
+                8 Марта – это не просто Международный женский день, это ещё день
+                тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.
+              </p>
             <div className="container shop">
                 <h2>Наш магазин</h2>
                 <div id="map" class="yandex-map"></div>
+
             </div>
             <div className="container articles">
                 <h2>Статьи</h2>

@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  margin-top: 70px;
+}
+.about__imgs {
+  position: relative;
+  width: 2000px;
+  height: 370px;
+  background: url("../../img/bg-about.png") no-repeat;
+}
+.about__front {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  z-index: 2;
+}
+.about__shapes {
+  position: absolute;
+  left: 75px;
+  top: 100px;
+  z-index: 1;
+}
+.about__info > h2 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #414141;
+}
+.about__info > p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ff6633;
+}
+.about__title {
+  display: flex;
+  align-items: flex-start;
+}
+.about__title > p {
+  margin-left: 10px;
+}
+.about__width-small {
+  width: 235px;
+}
