@@ -1,13 +1,16 @@
 import React from "react";
-// import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import {BrowserRouter} from "react-router-dom";
+import Header from "./components/Header/Header";
+import Routing from "./Routing";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div>
-      {/* <Header /> */}
-      <Main />
-    </div>
+    <BrowserRouter>
+       <Header />
+       <Routing />
+       <Footer />
+    </BrowserRouter>
   );
 };
 

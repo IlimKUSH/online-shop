@@ -28,7 +28,6 @@ const Main = () => {
 
   return (
     <div className="main">
-      <Header />
       <div className="background">
         <div className="container bg__container">
           <img className="bg__products" src={Products} alt="products" />
@@ -99,7 +98,6 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
