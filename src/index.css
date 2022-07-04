@@ -1,40 +1,40 @@
 body {
-  background: #fbf8ec;
+    background: #fbf8ec;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #414141;
+    text-decoration: none;
+    font-size: 16px;
+    color: #414141;
 }
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 150%;
-  color: #414141;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #414141;
 }
 h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  color: #414141;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #414141;
 }
 p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #414141;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #414141;
 }
 .yandex-map {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
