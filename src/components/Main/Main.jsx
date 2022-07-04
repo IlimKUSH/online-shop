@@ -1,6 +1,4 @@
-
 import React, { useEffect } from "react";
-
 
 import "./main.css";
 import Products from "../../img/products.png";
@@ -10,13 +8,7 @@ import Doctor from "../../img/doctor.png";
 import Food from "../../img/food.png";
 import Flowers from "../../img/flowers.png";
 
-import {useNavigate} from "react-router-dom";
-import List from "../List/List";
-
-
 const Main = () => {
-    const navigate = useNavigate()
-
     useEffect(() => {
         const Map = document.getElementById("map");
         const script = document.createElement("script");
@@ -36,20 +28,8 @@ const Main = () => {
         <div className="main">
             <div className="background">
                 <div className="container bg__container">
-                    <img className="bg__products" src={Products} alt="products"/>
+                    <img className="bg__products" src={Products} alt="products" />
                     <h1>Доставка бесплатно от 1000 ₽</h1>
-                </div>
-                <div>
-                    <p style={{
-                        fontSize: "35px"
-                    }}>Продукты</p>
-                    <p style={{
-                        cursor: 'pointer',
-                        fontSize:'30px',
-                    }} onClick={() => navigate('/add')}>add product</p>
-                </div>
-                <div>
-                    <List />
                 </div>
             </div>
             <div className="container hero">
@@ -60,38 +40,26 @@ const Main = () => {
                             <h3>Оформите карту «Северяночка»</h3>
                             <p>И получайте бонусы при покупке в магазинах и на сайте</p>
                         </div>
-                        <img className="hero__img" src={CardBlue} alt="card"/>
+                        <img className="hero__img" src={CardBlue} alt="card" />
                     </div>
                     <div className="hero__card hero__card-red">
                         <div>
                             <h3>Оформите карту «Северяночка»</h3>
                             <p>И получайте бонусы при покупке в магазинах и на сайте</p>
                         </div>
-                        <img className="hero__img" src={CardRed} alt="card"/>
+                        <img className="hero__img" src={CardRed} alt="card" />
                     </div>
                 </div>
             </div>
-
-          </div>
-          <div className="article__card">
-            <img src={Flowers} alt="doctor" />
-            <div className="article__text">
-              <p>08.03.2022</p>
-              <h4>Весеннее настроение для каждой </h4>
-              <p className="article__info">
-                8 Марта – это не просто Международный женский день, это ещё день
-                тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.
-              </p>
             <div className="container shop">
                 <h2>Наш магазин</h2>
-                <div id="map" class="yandex-map"></div>
-
+                <div id="map" className="yandex-map"></div>
             </div>
             <div className="container articles">
                 <h2>Статьи</h2>
                 <div className="articles__content">
                     <div className="article__card">
-                        <img src={Doctor} alt="doctor"/>
+                        <img src={Doctor} alt="doctor" />
                         <div className="article__text">
                             <p>03.07.2022</p>
                             <h4>
@@ -105,9 +73,9 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="article__card">
-                        <img src={Flowers} alt="doctor"/>
+                        <img src={Flowers} alt="doctor" />
                         <div className="article__text">
-                            <p>03.07.2022</p>
+                            <p>08.03.2022</p>
                             <h4>Весеннее настроение для каждой </h4>
                             <p className="article__info">
                                 8 Марта – это не просто Международный женский день, это ещё день
@@ -116,7 +84,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="article__card">
-                        <img src={Food} alt="doctor"/>
+                        <img src={Food} alt="doctor" />
                         <div className="article__text">
                             <p>03.07.2022</p>
                             <h4>ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем! </h4>
