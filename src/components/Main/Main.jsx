@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "../Header/Header";
 
 import "./main.css";
 import Products from "../../img/products.png";
@@ -8,7 +7,6 @@ import CardRed from "../../img/card-red.png";
 import Doctor from "../../img/doctor.png";
 import Food from "../../img/food.png";
 import Flowers from "../../img/flowers.png";
-import Footer from "../Footer/Footer";
 
 const Main = () => {
   useEffect(() => {
@@ -77,7 +75,7 @@ const Main = () => {
           <div className="article__card">
             <img src={Flowers} alt="doctor" />
             <div className="article__text">
-              <p>03.07.2022</p>
+              <p>08.03.2022</p>
               <h4>Весеннее настроение для каждой </h4>
               <p className="article__info">
                 8 Марта – это не просто Международный женский день, это ещё день

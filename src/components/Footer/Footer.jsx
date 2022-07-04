@@ -7,8 +7,12 @@ import Vk from "../../img/vk.svg";
 import Fb from "../../img/facebook.svg";
 import Ok from "../../img/ok.svg";
 import Tel from "../../img/phone.svg";
+import About from "../About/About";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <footer className="footer">
@@ -16,7 +20,7 @@ const Footer = () => {
           <div className="footer__content">
             <div className="footer__left">
               <img src={Logo} alt="logo" />
-              <p>О компании</p>
+              <p onClick={() => navigate("/about")}>О компании</p>
               <p>Контакты</p>
               <p>Вакансии</p>
               <p>Статьи</p>
