@@ -2,6 +2,7 @@
   margin-top: 80px;
   background: url("../../img/bg-footer.png");
   padding: 24px 0;
+  background-color: rgba(249, 244, 226, 1);
 }
 .footer__content {
   display: flex;

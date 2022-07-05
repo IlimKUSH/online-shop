@@ -18,10 +18,6 @@ const Main = () => {
     script.async = true;
 
     Map.appendChild(script);
-
-    return () => {
-      Map.removeChild(script);
-    };
   }, []);
 
   return (

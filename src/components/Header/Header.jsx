@@ -8,17 +8,15 @@ import Heart from "../../img/heart.svg";
 import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
-import { Link } from "react-router-dom";
-import Main from "../Main/Main";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header className="header">
       <div className="container">
         <div className="header__content">
-          <Link to={"/"} element={<Main />}>
-            <img src={Logo} alt="logo" />
-          </Link>
+          <img onClick={() => navigate("/")} src={Logo} alt="logo" />
           <button>
             <svg
               width="29"
