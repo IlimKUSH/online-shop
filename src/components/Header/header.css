@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-button {
+.header__btn {
   display: flex;
   align-items: center;
   padding: 8px 20px 8px 8px;
@@ -20,7 +20,7 @@ button {
   border: 0;
 }
 
-button > p {
+.header__btn > p {
   margin-left: 10px;
   color: #ffffff;
 }
