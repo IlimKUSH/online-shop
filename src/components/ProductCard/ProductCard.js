@@ -15,8 +15,8 @@ const ProductCard = ({item}) => {
                 <p>{item.price}</p>
                 <p>{item.title}</p>
                 <button onClick={() => deleteProduct(item.id)}>Delete</button>
-                <button onClick={() => deleteProduct(item.id)}>Edit</button>
-                <button onClick={() => deleteProduct(item.id)}>More</button>
+                <button onClick={() => navigate(`/edit/${item.id}`)}>Edit</button>
+                <button onClick={() => navigate(`/details/${item.id}`)}>More</button>
                 <button onClick={() => deleteProduct(item.id)}>Buy</button>
             </div>
         </div>
