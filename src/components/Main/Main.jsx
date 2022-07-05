@@ -12,17 +12,9 @@ import List from "../List/List";
 import Search from "../../img/search.svg";
 
 const Main = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  const [search, setSearch] = useState(
-    searchParams.get("q") ? searchParams.get("q") : ""
-  );
-
-  const [currentPage, setCurrentPage] = useState(
-    searchParams.get("_page" ? +searchParams.get("_page") : 1)
-  );
 
   const navigate = useNavigate();
+
   useEffect(() => {
     const Map = document.getElementById("map");
     const script = document.createElement("script");
@@ -33,12 +25,7 @@ const Main = () => {
     Map.appendChild(script);
   }, []);
 
-  useEffect(() => {
-    setSearchParams({
-      q: search,
-      _page: currentPage,
-    });
-  }, [search, currentPage]);
+
 
   return (
     <div className="main">
@@ -47,15 +34,6 @@ const Main = () => {
           <img className="bg__products" src={Products} alt="products" />
           <h1>Доставка бесплатно от 1000 ₽</h1>
         </div>
-      </div>
-      <div className="header__search">
-        <input
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          type="text"
-          placeholder="Найти товар"
-        />
-        <img src={Search} alt="search" />
       </div>
       <div>
         <p
