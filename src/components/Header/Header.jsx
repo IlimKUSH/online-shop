@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import "./header.css";
 
@@ -8,10 +8,25 @@ import Heart from "../../img/heart.svg";
 import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
-import { useNavigate } from "react-router-dom";
+import {useNavigate, useSearchParams} from "react-router-dom";
 
 const Header = () => {
+
+  // const [searchParams, setSearchParams] = useSearchParams();
+  //
+  // const [search,setSearch] = useState(searchParams.get("q") ? searchParams.get("q") :  "");
+  //
+  // const [currentPage, setCurrentPage] = useState(searchParams.get("_page" ? +searchParams.get("_page") : 1))
+
   const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   setSearchParams({
+  //     q:search,
+  //     _page: currentPage,
+  //     _limit: 2,
+  //   })
+  // },[search,currentPage])
   return (
     <header className="header">
       <div className="container">
@@ -83,10 +98,6 @@ const Header = () => {
             </svg>
             <p>Каталог</p>
           </button>
-          <div className="header__search">
-            <input type="text" placeholder="Найти товар" />
-            <img src={Search} alt="search" />
-          </div>
           <div className="header__ftrs">
             <img src={Heart} alt="favorite" />
             <p>Избранное</p>
@@ -95,7 +106,7 @@ const Header = () => {
             <img src={Orders} alt="orders" />
             <p>Заказы</p>
           </div>
-          <div className="header__ftrs">
+          <div onClick={() => navigate("/cart")} className="header__ftrs">
             <img src={Cart} alt="cart" />
             <p>Корзина</p>
           </div>

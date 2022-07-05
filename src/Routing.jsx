@@ -5,8 +5,8 @@ import Contacts from "./components/Contacts/Contacts";
 import Main from "./components/Main/Main";
 import EditProduct from "./components/EditProduct/EditProduct";
 import Details from "./components/Details/Details";
-
 import AddProduct from "./components/AddProduct/AddProduct";
+import Cart from "./components/Cart/Cart";
 
 
 const Routing = () => {
@@ -18,6 +18,7 @@ const Routing = () => {
             <Route path="/add" element={<AddProduct/>}/>
             <Route path="/edit/:id" element={<EditProduct/>}/>
             <Route path="/details/:id" element={<Details/>}/>
+            <Route path="/cart" element={<Cart/>}/>
 
         </Routes>
     );

@@ -56,6 +56,7 @@ const ProductContextProvider = ({children}) => {
 
     async function updateProduct(id, editedProduct) {
         await axios.patch(`${PRODUCTS_API}/${id}`, editedProduct)
+        getProducts()
     }
 
     return <productsContext.Provider value={{
