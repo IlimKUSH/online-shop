@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "title": "321312",
+      "price": 321312,
+      "image": "321312",
+      "id": 1
+    },
+    {
+      "title": "dzhalil",
+      "price": 123,
+      "image": "lol",
+      "id": 2
+    },
+    {
+      "title": "321321",
+      "price": 12312,
+      "image": "11111",
+      "id": 3
+    },
+    {
+      "title": "12312",
+      "price": 321312,
+      "image": "312321",
+      "id": 4
+    }
+  ]
+}

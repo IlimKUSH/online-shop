@@ -16,7 +16,6 @@ const Main = () => {
     script.src =
       "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac69cb4b3160d8b4efbbec50b1dcbfd5745c5add07c9cff84d462fbf06bfa67ea&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true";
     script.async = true;
-
     Map.appendChild(script);
   }, []);
 
@@ -49,7 +48,7 @@ const Main = () => {
       </div>
       <div className="container shop">
         <h2>Наш магазин</h2>
-        <div id="map" class="yandex-map"></div>
+        <div id="map" className="yandex-map"></div>
       </div>
       <div className="container articles">
         <h2>Статьи</h2>
