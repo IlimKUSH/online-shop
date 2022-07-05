@@ -19,6 +19,8 @@ const Cart = ({ item }) => {
           key={elem.item.id}
           style={{
             display: "flex",
+            justifyContent: 'center',
+            alignItems:'center'
           }}>
           <p>{elem.item.title}</p>
           <p>{elem.item.price}</p>
@@ -29,7 +31,9 @@ const Cart = ({ item }) => {
           <button onClick={() => changeCount(elem.count + 1, elem.item.id)}>
             +
           </button>
-          <p>{elem.subPrice}</p>
+          <div>
+          <img src={elem.item.image} alt="" width="100px"/>
+          </div>
           <button onClick={() => deleteFromCart(elem.item.id)}>delete</button>
           <button onClick={() => navigate(`/details/${elem.item.id}`)}>
             info
