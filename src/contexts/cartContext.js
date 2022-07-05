@@ -75,5 +75,33 @@ const CartContextProvider = ({children}) => {
                 totalPrice:0,
             };
         }
+        cart.products = cart.products.filter(item => item.item.id !== id);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        getCart();
+    }
+
+    function checkProductInCart(id) {
+        let cart =JSON.parse(localStorage.getItem("cart"));
+        if  (!cart) {
+            cart = {
+                products: [],
+                totalPrice:0,
+            };
+        }
+        const isProductInCart = cart.products.some(item => item.item.id === id);
+        return isProductInCart;
+    }
+
+    function changeCount(count, id){
+        if (count <= 0 ){
+            return;
+        }
+        let cart = JSON.parse(localStorage.getItem("cart"));
+        cart.products = cart.products.map(item => {
+            if (item.item.id === id) {
+                item.count = count;
+                item.subPrice = count * item.item.price
+            }
+        })
     }
 }
