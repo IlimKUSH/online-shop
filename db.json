@@ -1,40 +1,34 @@
 {
   "products": [
     {
-      "title": "312",
-      "price": 123,
-      "image": "321",
-      "id": 4
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "599.99",
+      "image": "https://dobryanka-rus.ru/storage/goods/241678_exxCs.jpg",
+      "id": 1
     },
     {
-      "title": "1",
-      "price": 1,
-      "image": "1",
-      "id": 5
+      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
+      "price": "44.50",
+      "image": "https://megatitan.ru/upload/iblock/971/hcv2g837pdf9dv987jcgi94jk52kvrzd.jpg",
+      "id": 2
     },
     {
-      "title": "3",
-      "price": 3,
-      "image": "3",
-      "id": 6
+      "title": "Г/Ц Блинчики с мясом вес, Россия",
+      "price": "44.50",
+      "image": "https://lenta.gcdn.co/globalassets/1/-/01/26/76/329490_4.png?preset=fulllossywhite",
+      "id": 3
     },
     {
-      "title": "123",
-      "price": 321,
-      "image": "123",
+      "title": "Хлеб",
+      "price": "40",
+      "image": "https://arbuz.kz/image/f/238564-hleb_harry_s_american_sandwich_sendvichnyi_pshenichnyi_470_g.jpg?w=1100&h=1100&_c=1655970636",
       "id": 7
     },
     {
-      "title": "312",
-      "price": 321312,
-      "image": "321",
+      "title": "Кефир",
+      "price": "100",
+      "image": "https://roscontrol.com/wp-content/uploads/2021/09/926be7bef13318e54d0d.jpg",
       "id": 8
-    },
-    {
-      "title": "32",
-      "price": 32,
-      "image": "32",
-      "id": 9
     }
   ]
 }

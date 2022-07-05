@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container">
         <div className="header__content">
           <img onClick={() => navigate("/")} src={Logo} alt="logo" />
-          <button>
+          <button className="header__btn">
             <svg
               width="29"
               height="25"

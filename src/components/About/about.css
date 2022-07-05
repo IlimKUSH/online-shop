@@ -14,13 +14,16 @@
   position: absolute;
   bottom: 0;
   left: 40px;
-  z-index: 2;
+  margin: 0 auto;
 }
 .about__shapes {
+  right: -56px;
   position: absolute;
-  left: 75px;
-  top: 100px;
+  top: -20px;
   z-index: -1;
+}
+.shapes__container {
+  position: relative;
 }
 .about__info > h2 {
   font-size: 64px;
