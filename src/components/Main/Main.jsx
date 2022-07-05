@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./main.css";
 import Products from "../../img/products.png";
@@ -7,10 +7,21 @@ import CardRed from "../../img/card-red.png";
 import Doctor from "../../img/doctor.png";
 import Food from "../../img/food.png";
 import Flowers from "../../img/flowers.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import List from "../List/List";
+import Search from "../../img/search.svg";
 
 const Main = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const [search, setSearch] = useState(
+    searchParams.get("q") ? searchParams.get("q") : ""
+  );
+
+  const [currentPage, setCurrentPage] = useState(
+    searchParams.get("_page" ? +searchParams.get("_page") : 1)
+  );
+
   const navigate = useNavigate();
   useEffect(() => {
     const Map = document.getElementById("map");
@@ -22,6 +33,13 @@ const Main = () => {
     Map.appendChild(script);
   }, []);
 
+  useEffect(() => {
+    setSearchParams({
+      q: search,
+      _page: currentPage,
+    });
+  }, [search, currentPage]);
+
   return (
     <div className="main">
       <div className="background">
@@ -30,8 +48,22 @@ const Main = () => {
           <h1>Доставка бесплатно от 1000 ₽</h1>
         </div>
       </div>
-      <div className="container">
-        <h2>Продукты</h2>
+      <div className="header__search">
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          type="text"
+          placeholder="Найти товар"
+        />
+        <img src={Search} alt="search" />
+      </div>
+      <div>
+        <p
+          style={{
+            fontSize: "35px",
+          }}>
+          Продукты
+        </p>
         <p
           style={{
             cursor: "pointer",

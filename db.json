@@ -7,14 +7,8 @@
       "id": 1
     },
     {
-      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
-      "price": "44.50",
-      "image": "https://megatitan.ru/upload/iblock/971/hcv2g837pdf9dv987jcgi94jk52kvrzd.jpg",
-      "id": 2
-    },
-    {
       "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50",
+      "price": 44.50555,
       "image": "https://lenta.gcdn.co/globalassets/1/-/01/26/76/329490_4.png?preset=fulllossywhite",
       "id": 3
     },
@@ -29,6 +23,42 @@
       "price": "100",
       "image": "https://roscontrol.com/wp-content/uploads/2021/09/926be7bef13318e54d0d.jpg",
       "id": 8
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 9
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 10
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 11
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 12
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 13
+    },
+    {
+      "title": "2",
+      "price": "2",
+      "image": "2",
+      "id": 14
     }
   ]
 }

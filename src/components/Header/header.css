@@ -25,21 +25,6 @@
   color: #ffffff;
 }
 
-.header__search {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  border: 1px solid #70c05b;
-  border-radius: 4px;
-}
-.header__search > input {
-  width: 374px;
-  border: none;
-}
-.header__search > input:focus {
-  outline: none;
-}
-
 .header__ftrs {
   display: flex;
   flex-direction: column;

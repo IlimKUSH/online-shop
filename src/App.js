@@ -4,16 +4,19 @@ import Header from "./components/Header/Header";
 import Routing from "./Routing";
 import Footer from "./components/Footer/Footer";
 import ProductContextProvider from "./contexts/productsContext";
+import CartContextProvider from "./contexts/cartContext";
 
 const App = () => {
     return (
-        <ProductContextProvider>
-            <BrowserRouter>
-                <Header/>
-                <Routing/>
-                <Footer/>
-            </BrowserRouter>
-        </ProductContextProvider>
+        <CartContextProvider>
+            <ProductContextProvider>
+                <BrowserRouter>
+                    <Header/>
+                    <Routing/>
+                    <Footer/>
+                </BrowserRouter>
+            </ProductContextProvider>
+        </CartContextProvider>
     );
 };
 

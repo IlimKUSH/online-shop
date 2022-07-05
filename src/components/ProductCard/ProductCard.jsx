@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { cartContext } from "../../contexts/cartContext";
 import { productsContext } from "../../contexts/productsContext";
 import "./productCard.css";
 
 const ProductCard = ({ item }) => {
-  // const { addToCart, checkProductInCart } = React.useContext(cartContext);
+  const { addToCart, checkProductInCart } = React.useContext(cartContext);
 
   const navigate = useNavigate();
-  // const[productState,setProductState] = useState()
   const { deleteProduct } = useContext(productsContext);
+  const [productState, setProductState] = useState(checkProductInCart(item.id));
   return (
     <div>
       <div className="container">
@@ -19,12 +20,18 @@ const ProductCard = ({ item }) => {
           <div className="products__text">
             <h4>{item.price} ₽</h4>
             <p>{item.title}</p>
-            <button onClick={() => deleteProduct(item.id)}>В корзину</button>
+            <button
+              onClick={() => {
+                addToCart(item);
+                setProductState(checkProductInCart(item.id));
+              }}>
+              В корзину
+            </button>
           </div>
         </div>
-        {/* <button onClick={() => deleteProduct(item.id)}>Delete</button>
+        <button onClick={() => deleteProduct(item.id)}>Delete</button>
         <button onClick={() => navigate(`/edit/${item.id}`)}>Edit</button>
-        <button onClick={() => navigate(`/details/${item.id}`)}>More</button> */}
+        <button onClick={() => navigate(`/details/${item.id}`)}>More</button>
       </div>
     </div>
   );
