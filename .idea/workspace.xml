@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07bb64d0-a224-4f6c-8b4d-b98afa4dc82f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Details/Details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EditProduct/EditProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/cartContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Contacts/Contacts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Contacts/contacts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/logo-about.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
       <updated>1656914838267</updated>
       <workItem from="1656914839396" duration="523000" />
       <workItem from="1656917833175" duration="5189000" />
-      <workItem from="1656931817190" duration="3848000" />
+      <workItem from="1656931817190" duration="4104000" />
     </task>
     <servers />
   </component>

@@ -19,10 +19,9 @@ const Main = () => {
         script.src =
             "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac69cb4b3160d8b4efbbec50b1dcbfd5745c5add07c9cff84d462fbf06bfa67ea&amp;width=1200&amp;height=400&amp;lang=ru_RU&amp;scroll=true";
         script.async = true;
-
         Map.appendChild(script);
-
     }, []);
+
 
     return (
         <div className="main">
@@ -31,18 +30,6 @@ const Main = () => {
                     <img className="bg__products" src={Products} alt="products"/>
                     <h1>Доставка бесплатно от 1000 ₽</h1>
                 </div>
-            </div>
-            <div>
-                <p style={{
-                    fontSize: "35px"
-                }}>Продукты</p>
-                <p style={{
-                    cursor: 'pointer',
-                    fontSize: '30px',
-                }} onClick={() => navigate("/add")}>add product</p>
-            </div>
-            <div>
-                <List/>
             </div>
             <div className="container hero">
                 <h2>Специальные предложения</h2>
