@@ -35,7 +35,7 @@ const AddProduct = () => {
         type="text"
       />
       <input
-        onChange={e => setPrice(e.target.value)}
+        onChange={e => setPrice(+e.target.value)}
         value={price}
         placeholder="Цена"
         type="number"
