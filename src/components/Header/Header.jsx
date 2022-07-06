@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 
 import "./header.css";
 
@@ -12,21 +12,18 @@ import {useNavigate, useSearchParams} from "react-router-dom";
 
 const Header = () => {
 
-  // const [searchParams, setSearchParams] = useSearchParams();
-  //
-  // const [search,setSearch] = useState(searchParams.get("q") ? searchParams.get("q") :  "");
-  //
-  // const [currentPage, setCurrentPage] = useState(searchParams.get("_page" ? +searchParams.get("_page") : 1))
+  const [searchParam, setSearchParam] = useSearchParams();
+
+  const [search,setSearch] = useState(searchParam.get("q") ? searchParam.get("q") :  "");
+
 
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   setSearchParams({
-  //     q:search,
-  //     _page: currentPage,
-  //     _limit: 2,
-  //   })
-  // },[search,currentPage])
+  useEffect(() => {
+    setSearchParam({
+      q:search,
+    })
+  },[search])
   return (
     <header className="header">
       <div className="container">
@@ -98,6 +95,15 @@ const Header = () => {
             </svg>
             <p>Каталог</p>
           </button>
+          <div className="header__search">
+            <input
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                type="text"
+                placeholder="Найти товар"
+            />
+            <img src={Search} alt="search"/>
+          </div>
           <div className="header__ftrs">
             <img src={Heart} alt="favorite" />
             <p>Избранное</p>
