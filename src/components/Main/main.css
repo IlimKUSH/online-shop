@@ -13,10 +13,10 @@
   align-items: center;
 }
 h1 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 150%;
-  color: #414141;
+  font-weight: 700 !important;
+  font-size: 48px !important;
+  line-height: 150% !important;
+  color: #414141 !important;
 }
 
 .hero__card {
