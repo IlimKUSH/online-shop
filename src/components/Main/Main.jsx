@@ -12,7 +12,6 @@ import List from "../List/List";
 import Search from "../../img/search.svg";
 
 const Main = () => {
-
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,8 +24,6 @@ const Main = () => {
     Map.appendChild(script);
   }, []);
 
-
-
   return (
     <div className="main">
       <div className="background">
@@ -35,21 +32,9 @@ const Main = () => {
           <h1>Доставка бесплатно от 1000 ₽</h1>
         </div>
       </div>
-      <div>
-        <p
-          style={{
-            fontSize: "35px",
-          }}>
-          Продукты
-        </p>
-        <p
-          style={{
-            cursor: "pointer",
-            fontSize: "30px",
-          }}
-          onClick={() => navigate("/add")}>
-          add product
-        </p>
+      <div className="container add">
+        <h2>Продукты</h2>
+        <h4 onClick={() => navigate("/add")}>Добавить продукт</h4>
       </div>
       <div>
         <List />

@@ -29,3 +29,6 @@
 .footer__right-phone > img {
   margin-right: 10px;
 }
+.footer__left > p {
+  cursor: pointer;
+}

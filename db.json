@@ -1,3 +1,63 @@
 {
+<<<<<<< HEAD
   "products": []
 }
+=======
+  "products": [
+    {
+      "title": "Колбаса \"Черкизово\"",
+      "price": 999,
+      "image": "https://dobryanka-rus.ru/storage/goods/241678_exxCs.jpg",
+      "id": 1
+    },
+    {
+      "title": "Г/Ц Блинчики с мясом вес, Россия",
+      "price": 44,
+      "image": "https://lenta.gcdn.co/globalassets/1/-/01/26/76/329490_4.png?preset=fulllossywhite",
+      "id": 3
+    },
+    {
+      "title": "Тостерный хлеб \"Harry' s\"",
+      "price": 40,
+      "image": "https://arbuz.kz/image/f/238564-hleb_harry_s_american_sandwich_sendvichnyi_pshenichnyi_470_g.jpg?w=1100&h=1100&_c=1655970636",
+      "id": 7
+    },
+    {
+      "title": "Кефир \"Простоквашино\"",
+      "price": 100,
+      "image": "https://roscontrol.com/wp-content/uploads/2021/09/926be7bef13318e54d0d.jpg",
+      "id": 8
+    },
+    {
+      "title": "Томатный кетчуп \"Heinz\"",
+      "price": 100,
+      "image": "https://viva-italia.od.ua/image/cache/catalog/sousi/Heinz_Tomato_ketchup_1_kg-900x900-1000x1000.jpg",
+      "id": 9
+    },
+    {
+      "title": "Майонез \"3 Желания\"",
+      "price": 100,
+      "image": "https://www.efc.kz/uploads/posts/2018-08/1534415496_380_provansal-class.jpg",
+      "id": 10
+    },
+    {
+      "title": "Колбаса \"Докторская\"",
+      "price": 500,
+      "image": "https://lenta.gcdn.co/globalassets/1/-/33/64/55/232612_1.png?preset=fulllossywhite",
+      "id": 11
+    },
+    {
+      "title": "\"Fanta\" 1л.",
+      "price": 100,
+      "image": "https://svetofor.info/images/detailed/197/napitok-fanta-pet-gazirovannyj-15-l-1-sht-113.jpg",
+      "id": 12
+    },
+    {
+      "title": "\"Coca Cola\"",
+      "price": 100,
+      "image": "https://svetofor.info/images/detailed/197/napitok-coca-cola-pet-gazirovannyj-1-l-1-sht-1-113.jpg",
+      "id": 13
+    }
+  ]
+}
+>>>>>>> c93961f92cc1af2f2259171c9f1598a82babfa96

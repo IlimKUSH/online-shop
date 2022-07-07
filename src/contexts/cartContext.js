@@ -57,11 +57,13 @@ const CartContextProvider = ({ children }) => {
       cart = {
         products: [],
         totalPrice: 0,
+        discount: 0,
       };
     }
     cart.totalPrice = cart.products.reduce((prev, curr) => {
       return prev + curr.subPrice;
     }, 0);
+    cart.discount = Math.ceil(cart.totalPrice * 0.05);
     dispatch({
       type: "GET_CART",
       payload: cart,
