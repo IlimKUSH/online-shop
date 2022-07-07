@@ -11,7 +11,6 @@ const Cart = ({ item }) => {
   useEffect(() => {
     getCart();
   }, []);
-  console.log(cart);
   return cart ? (
     <div>
       {cart.products.map(elem => (

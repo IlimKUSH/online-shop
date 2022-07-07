@@ -1,0 +1,32 @@
+.container__pay {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-div {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 8px 15px 0 rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -1px 8px 15px 0 rgba(0, 0, 0, 0.44);
+    box-shadow: -1px 8px 15px 0 rgba(0, 0, 0, 0.44);
+}
+
+.alert{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container__name{
+    margin-right: 100px;
+}
+
+.svg__pay {
+    margin: 5px 0;
+}
+
+.creditCard{
+    margin-top: 111px;
+}

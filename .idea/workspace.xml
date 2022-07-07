@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07bb64d0-a224-4f6c-8b4d-b98afa4dc82f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Payment/Payment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Payment/Payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Payment/useForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Payment/validateInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddProduct/AddProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddProduct/AddProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductCard/productCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard/productCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,9 +47,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react/lesson-5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Notnik_kg\Desktop\Makers\hackathon-shop\online-shop\src\components\Payment" />
+      <recent name="C:\Users\Notnik_kg\Desktop\Makers\hackathon-shop\online-shop\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,7 +68,7 @@
       <updated>1656914838267</updated>
       <workItem from="1656914839396" duration="523000" />
       <workItem from="1656917833175" duration="5189000" />
-      <workItem from="1656931817190" duration="23445000" />
+      <workItem from="1656931817190" duration="39047000" />
     </task>
     <servers />
   </component>

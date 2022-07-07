@@ -9,8 +9,12 @@ import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
 import {useNavigate, useSearchParams} from "react-router-dom";
+import {Badge} from "@mui/material";
+import {cartContext} from "../../contexts/cartContext";
 
 const Header = () => {
+
+  const {count} = useContext(cartContext)
 
   const [searchParam, setSearchParam] = useSearchParams();
 
@@ -113,6 +117,14 @@ const Header = () => {
             <p>Заказы</p>
           </div>
           <div onClick={() => navigate("/cart")} className="header__ftrs">
+            <Badge
+                style={{
+                  padding:"0 0 5px 25px"
+                }}
+                badgeContent={count}
+                color="error"
+            >
+            </Badge>
             <img src={Cart} alt="cart" />
             <p>Корзина</p>
           </div>

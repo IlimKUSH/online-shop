@@ -7,6 +7,7 @@ import EditProduct from "./components/EditProduct/EditProduct";
 import Details from "./components/Details/Details";
 import AddProduct from "./components/AddProduct/AddProduct";
 import Cart from "./components/Cart/Cart";
+import Payment from "./components/Payment/Payment";
 
 
 const Routing = () => {
@@ -19,6 +20,7 @@ const Routing = () => {
             <Route path="/edit/:id" element={<EditProduct/>}/>
             <Route path="/details/:id" element={<Details/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/payment" element={<Payment/>}/>
 
         </Routes>
     );
