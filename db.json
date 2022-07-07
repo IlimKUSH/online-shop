@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "title": "Колбаса \"Черкизово\"",
       "price": 999,
       "image": "https://dobryanka-rus.ru/storage/goods/241678_exxCs.jpg",
       "id": 1
@@ -13,52 +13,46 @@
       "id": 3
     },
     {
-      "title": "Хлеб",
+      "title": "Тостерный хлеб \"Harry' s\"",
       "price": 40,
       "image": "https://arbuz.kz/image/f/238564-hleb_harry_s_american_sandwich_sendvichnyi_pshenichnyi_470_g.jpg?w=1100&h=1100&_c=1655970636",
       "id": 7
     },
     {
-      "title": "Кефир",
+      "title": "Кефир \"Простоквашино\"",
       "price": 100,
       "image": "https://roscontrol.com/wp-content/uploads/2021/09/926be7bef13318e54d0d.jpg",
       "id": 8
     },
     {
-      "title": "312",
-      "price": 200,
-      "image": "100",
+      "title": "Томатный кетчуп \"Heinz\"",
+      "price": 100,
+      "image": "https://viva-italia.od.ua/image/cache/catalog/sousi/Heinz_Tomato_ketchup_1_kg-900x900-1000x1000.jpg",
       "id": 9
     },
     {
-      "title": "123",
-      "price": 300,
-      "image": "1111",
+      "title": "Майонез \"3 Желания\"",
+      "price": 100,
+      "image": "https://www.efc.kz/uploads/posts/2018-08/1534415496_380_provansal-class.jpg",
       "id": 10
     },
     {
-      "title": "123",
-      "price": 123,
-      "image": "123",
+      "title": "Колбаса \"Докторская\"",
+      "price": 500,
+      "image": "https://lenta.gcdn.co/globalassets/1/-/33/64/55/232612_1.png?preset=fulllossywhite",
       "id": 11
     },
     {
-      "title": "123123",
-      "price": 312,
-      "image": "12312312",
+      "title": "\"Fanta\" 1л.",
+      "price": 100,
+      "image": "https://svetofor.info/images/detailed/197/napitok-fanta-pet-gazirovannyj-15-l-1-sht-113.jpg",
       "id": 12
     },
     {
-      "title": "123",
-      "price": 123,
-      "image": "123",
+      "title": "\"Coca Cola\"",
+      "price": 100,
+      "image": "https://svetofor.info/images/detailed/197/napitok-coca-cola-pet-gazirovannyj-1-l-1-sht-1-113.jpg",
       "id": 13
-    },
-    {
-      "title": "123",
-      "price": 123,
-      "image": "123",
-      "id": 14
     }
   ]
 }

@@ -108,3 +108,13 @@ h1 {
 .header__search > input:focus {
   outline: none;
 }
+
+.add {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add > h4 {
+  cursor: pointer;
+}
