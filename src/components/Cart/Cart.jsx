@@ -17,7 +17,7 @@ const Cart = ({ item }) => {
     <div>
       <div className="container">
         <div className="path">
-          <p>Главная</p>
+          <p onClick={() => navigate("/")}>Главная</p>
           <svg
             width="24"
             height="24"
@@ -42,8 +42,8 @@ const Cart = ({ item }) => {
                   <div className="cart__cart-text">
                     <img src={elem.item.image} alt="" width="100px" />
                     <div className="cart__card-info">
-                      <p>{elem.item.title}</p>
-                      <p>{elem.item.price} ₽ за шт.</p>
+                      <p className="super__price">{elem.item.title}</p>
+                      <p className="sub__price">{elem.item.price} ₽ за шт.</p>
                     </div>
                   </div>
                   <div className="cart__btn">
@@ -83,14 +83,14 @@ const Cart = ({ item }) => {
                       />
                     </svg>
                   </div>
-                  {/* <div>
+                  <div>
                   <button onClick={() => deleteFromCart(elem.item.id)}>
                     delete
                   </button>
                   <button onClick={() => navigate(`/details/${elem.item.id}`)}>
                     info
                   </button>
-                </div> */}
+                </div>
                 </div>
               ))}
             </div>

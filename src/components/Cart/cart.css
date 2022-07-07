@@ -7,7 +7,7 @@
   margin: 0 16px 0 16px;
 }
 .cart > h2 {
-  font-size: 64px;
+  font-size: 64px !important;
 }
 .cart__content {
   display: flex;
@@ -34,7 +34,7 @@
   height: 60px;
 }
 .cart__card-info > p:first-child {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .cart__card-info {
   margin-left: 10px;
@@ -101,20 +101,27 @@
   font-weight: 700;
 }
 .pay__btn {
-  margin-top: 20px;
-  padding: 15px 19px;
-  background: #fcd5ba;
-  border-radius: 4px;
+  margin-top: 20px ;
+  padding: 15px 19px ;
+  background: #fcd5ba ;
+  border-radius: 4px ;
   border: none;
 }
 .pay__btn > p {
-  color: #ff6633;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
+  color: #ff6633 !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 150% !important;
 }
 .bonus__payment {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.sub__price{
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+.super__price{
+
 }

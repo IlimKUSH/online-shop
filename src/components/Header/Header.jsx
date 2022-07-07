@@ -8,7 +8,6 @@ import Heart from "../../img/heart.svg";
 import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
-<<<<<<< HEAD
 import {useNavigate, useSearchParams} from "react-router-dom";
 import {Badge} from "@mui/material";
 import {cartContext} from "../../contexts/cartContext";
@@ -17,11 +16,6 @@ const Header = () => {
 
   const {count} = useContext(cartContext)
 
-=======
-import { useNavigate, useSearchParams } from "react-router-dom";
-
-const Header = () => {
->>>>>>> c93961f92cc1af2f2259171c9f1598a82babfa96
   const [searchParam, setSearchParam] = useSearchParams();
 
   const [search, setSearch] = useState(
@@ -53,10 +47,6 @@ const Header = () => {
             <img src={Heart} alt="favorite" />
             <p>Избранное</p>
           </div>
-          {/* <div className="header__ftrs">
-            <img src={Orders} alt="orders" />
-            <p>Заказы</p>
-          </div> */}
           <div onClick={() => navigate("/cart")} className="header__ftrs">
             <Badge
                 style={{
