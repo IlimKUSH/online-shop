@@ -8,7 +8,12 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.header__content > img {
+  cursor: pointer;
+}
+.header__ftrs {
+  cursor: pointer;
+}
 .header__btn {
   display: flex;
   align-items: center;
