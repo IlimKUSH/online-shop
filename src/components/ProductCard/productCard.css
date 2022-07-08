@@ -45,7 +45,6 @@
   margin-top: 10px;
   border: 1px solid #70c05b;
   border-radius: 4px;
-  background-color: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -65,10 +64,10 @@
 
 .products__text-btn {
   cursor: pointer;
-  transition: 0.2s all;
+  /* transition: 0.2s all; */
 }
 
-.products__text-btn:hover {
-  background: rgba(112, 192, 91, 1);
+/* .products__text-btn:hover {
+  background-color: rgba(112, 192, 91, 1) !important;
   color: #ffffff;
-}
+} */

@@ -47,3 +47,7 @@
 .header__avatar > p {
   margin-left: 10px;
 }
+.header__avatar > img {
+  width: 40px;
+  border-radius: 50%;
+}
