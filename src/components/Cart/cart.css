@@ -40,6 +40,7 @@
   margin-left: 10px;
 }
 .cart__btn {
+  margin-right: 50px;
   padding: 7px;
   display: flex;
   background: #70c05b;
@@ -101,10 +102,10 @@
   font-weight: 700;
 }
 .pay__btn {
-  margin-top: 20px ;
-  padding: 15px 19px ;
-  background: #fcd5ba ;
-  border-radius: 4px ;
+  margin-top: 20px;
+  padding: 15px 19px;
+  background: #fcd5ba;
+  border-radius: 4px;
   border: none;
 }
 .pay__btn > p {
@@ -118,10 +119,18 @@
   flex-direction: column;
   align-items: center;
 }
-.sub__price{
+.sub__price {
   font-weight: 700 !important;
   font-size: 16px !important;
 }
-.super__price{
 
+.cart__btn-parent {
+  display: flex;
+  align-items: center;
+}
+.cart__btn-parent > svg {
+  cursor: pointer;
+}
+.cart__btn-parent > svg > path {
+  fill: red;
 }
