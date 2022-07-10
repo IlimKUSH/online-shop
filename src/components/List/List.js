@@ -43,7 +43,7 @@ const List = () => {
           marginTop: "20px",
           flexDirection: "column",
         }}
-        className="container-parent">
+        className="container container-parent">
         <p
           style={{
             fontSize: "18px",
