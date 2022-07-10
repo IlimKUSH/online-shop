@@ -27,26 +27,33 @@ const AddProduct = () => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}>
       <input
+        style={{ marginTop: 15 }}
         onChange={e => setTitle(e.target.value)}
         value={title}
         placeholder="Название"
         type="text"
       />
       <input
+        style={{ marginTop: 15 }}
         onChange={e => setPrice(+e.target.value)}
         value={price}
         placeholder="Цена"
         type="number"
       />
       <input
+        style={{ marginTop: 15 }}
         onChange={e => setImage(e.target.value)}
         value={image}
         placeholder="Картинка"
         type="text"
       />
-      <button onClick={handleSave}>Save</button>
+      <button style={{ marginTop: 15 }} onClick={handleSave}>
+        Save
+      </button>
     </div>
   );
 };

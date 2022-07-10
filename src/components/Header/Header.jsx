@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-
 import "./header.css";
-
 import Logo from "../../img/logo.svg";
 import Search from "../../img/search.svg";
 import Heart from "../../img/heart.svg";
@@ -13,24 +11,18 @@ import { cartContext } from "../../contexts/cartContext";
 import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
 import Profile from "../Profile";
-
 const Header = () => {
   const { count } = useContext(cartContext);
-
   const [searchParam, setSearchParam] = useSearchParams();
-
   const [search, setSearch] = useState(
-      searchParam.get("q") ? searchParam.get("q") : ""
+    searchParam.get("q") ? searchParam.get("q") : ""
   );
-
   const navigate = useNavigate();
-
   useEffect(() => {
     setSearchParam({
       q: search,
     });
   }, [search]);
-
   return (
     <header className="header">
       <div className="container">
@@ -45,8 +37,10 @@ const Header = () => {
             />
             <img src={Search} alt="search" />
           </div>
-          <img src={Heart} alt="favorite" />
-          <p>Избранное</p>
+          <div onClick={() => navigate("/favourite")} className="header__ftrs">
+            <img src={Heart} alt="favorite" />
+            <p>Избранное</p>
+          </div>
           <div onClick={() => navigate("/cart")} className="header__ftrs">
             <Badge
               style={{
@@ -61,13 +55,12 @@ const Header = () => {
             <LoginButton />
             <LogoutButton />
             <Profile />
-
             {/* <img src={Avatar} alt="avatar" />
             <p>Alex</p> */}
           </div>
         </div>
-      </header>
+      </div>
+    </header>
   );
 };
-
 export default Header;

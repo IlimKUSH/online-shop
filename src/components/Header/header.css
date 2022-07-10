@@ -43,6 +43,7 @@
 .header__avatar {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .header__avatar > p {
   margin-left: 10px;

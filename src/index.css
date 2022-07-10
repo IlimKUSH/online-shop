@@ -55,3 +55,12 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.login__button {
+  background-color: inherit;
+  border: 0;
+}
+.logout__button {
+  background-color: inherit;
+  border: 0;
+}

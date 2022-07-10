@@ -4,6 +4,11 @@
   padding: 24px 0;
   background-color: rgba(249, 244, 226, 1);
 }
+.footer__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .footer__content {
   display: flex;
   flex-wrap: wrap;
