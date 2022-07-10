@@ -34,7 +34,7 @@ const Cart = ({ item }) => {
         </div>
         <div className="cart">
           <h2>Корзина</h2>
-          <dv className="cart__content">
+          <div className="cart__content">
             <div>
               {cart.products.map(elem => (
                 <div className="cart__card" key={elem.item.id}>
@@ -154,7 +154,7 @@ const Cart = ({ item }) => {
                 </button>
               </div>
             </div>
-          </dv>
+          </div>
         </div>
       </div>
     </div>

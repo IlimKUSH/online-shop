@@ -20,7 +20,7 @@ const Header = () => {
   const [searchParam, setSearchParam] = useSearchParams();
 
   const [search, setSearch] = useState(
-    searchParam.get("q") ? searchParam.get("q") : ""
+      searchParam.get("q") ? searchParam.get("q") : ""
   );
 
   const navigate = useNavigate();
@@ -66,8 +66,7 @@ const Header = () => {
             <p>Alex</p> */}
           </div>
         </div>
-      </div>
-    </header>
+      </header>
   );
 };
 
