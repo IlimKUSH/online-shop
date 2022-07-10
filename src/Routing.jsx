@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Contacts from "./components/Contacts/Contacts";
 import Main from "./components/Main/Main";
@@ -10,7 +10,6 @@ import Cart from "./components/Cart/Cart";
 import Payment from "./components/Payment/Payment";
 import Fav from "./components/Fav/Fav";
 import Testimonials from "./components/Testimonials/Testimonials";
-
 
 const Routing = () => {
     return (
@@ -29,5 +28,6 @@ const Routing = () => {
         </Routes>
     );
 }
+
 
 export default Routing;
