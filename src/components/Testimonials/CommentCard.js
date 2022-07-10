@@ -59,19 +59,15 @@ const CommentCard = ({ item }) => {
               padding: "0 0 10px 10px",
             }}>
             <button
-              style={{ backgroundColor: "inherit", borderRadius: "5px" }}
+              style={{
+                backgroundColor: "inherit",
+                borderRadius: "5px",
+                marginRight: "10px",
+              }}
               onClick={() => deleteComment(item.id)}>
               Delete
             </button>
-            <button
-              style={{
-                backgroundColor: "inherit",
-                margin: "0 10px 0 10px",
-                borderRadius: "5px",
-              }}
-              onClick={() => navigate(`/edit/${item.id}`)}>
-              Edit
-            </button>
+
             <ThumbUpIcon
               style={{
                 cursor: "pointer",
