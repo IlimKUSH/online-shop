@@ -43,37 +43,41 @@ const List = () => {
           marginTop: "20px",
           flexDirection: "column",
         }}
-        className="container">
+        className="container-parent">
         <p
           style={{
             fontSize: "18px",
           }}>
           По цене:
         </p>
-        <div
-          style={{
-            width: "600px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            margin: "10px 0 20px 0",
-          }}>
-          <p>0</p>
-          <Slider
+        <div className="slider__parent">
+          <div
+            className="slider-parent"
             style={{
-              width: "500px",
-              color: "#70c05b",
-            }}
-            value={price}
-            onChange={e => {
-              setPrice(e.target.value);
-            }}
-            valueLabelDisplay="auto"
-            min={0}
-            max={1000}
-            step={1}
-          />
-          <p>1000</p>
+              width: "600px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              margin: "10px 0 20px 0",
+            }}>
+            <p>0</p>
+            <Slider
+              className="slider"
+              style={{
+                width: "500px",
+                color: "#70c05b",
+              }}
+              value={price}
+              onChange={e => {
+                setPrice(e.target.value);
+              }}
+              valueLabelDisplay="auto"
+              min={0}
+              max={1000}
+              step={1}
+            />
+            <p>1000</p>
+          </div>
         </div>
       </div>
       <div className="products__cards container">
@@ -86,6 +90,7 @@ const List = () => {
         ))}
       </div>
       <Pagination
+        className="pagination"
         style={{ marginTop: "20px" }}
         onChange={(event, page) => setCurrentPage(page)}
         page={currentPage}

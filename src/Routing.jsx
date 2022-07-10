@@ -8,6 +8,7 @@ import Details from "./components/Details/Details";
 import AddProduct from "./components/AddProduct/AddProduct";
 import Cart from "./components/Cart/Cart";
 import Payment from "./components/Payment/Payment";
+import Profile from "./components/Profile";
 
 const Routing = () => {
   return (

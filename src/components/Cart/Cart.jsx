@@ -151,7 +151,7 @@ const Cart = ({ item }) => {
                   </span>
                 </span>
                 <button className="pay__btn">
-                  <p>Оформить заказ</p>
+                  <p onClick={() => navigate("/payment")}>Оформить заказ</p>
                 </button>
               </div>
             </div>
