@@ -1,0 +1,6 @@
+.info > img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+}

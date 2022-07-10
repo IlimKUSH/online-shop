@@ -93,6 +93,9 @@
   .hero__card {
     flex-wrap: wrap;
   }
+  .footer__right {
+    margin-top: 15px;
+  }
 }
 
 @media all and (max-width: 576px) {
