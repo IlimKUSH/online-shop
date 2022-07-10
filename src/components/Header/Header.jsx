@@ -7,12 +7,13 @@ import Search from "../../img/search.svg";
 import Heart from "../../img/heart.svg";
 // import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
-// import Avatar from "../../img/avatar.svg";
+import Avatar from "../../img/avatar.svg";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Badge } from "@mui/material";
 import { cartContext } from "../../contexts/cartContext";
-import { useAuth0 } from "@auth0/auth0-react";
-// import Profile from "../Auth/Profile";
+import LoginButton from "../LoginButton";
+import LogoutButton from "../LogoutButton";
+import Profile from "../Profile";
 
 const Header = () => {
   const { count } = useContext(cartContext);
@@ -37,6 +38,7 @@ const Header = () => {
         <div className="header__content">
           <img onClick={() => navigate("/")} src={Logo} alt="logo" />
           <div className="header__search">
+            <Profile />
             <input
               value={search}
               onChange={e => setSearch(e.target.value)}
@@ -45,9 +47,6 @@ const Header = () => {
             />
             <img src={Search} alt="search" />
           </div>
-          <div className="header__ftrs"
-          onClick={() => navigate("/favourite")}
-          >
             <img src={Heart} alt="favorite" />
             <p>Избранное</p>
           </div>
@@ -62,7 +61,10 @@ const Header = () => {
             <p>Корзина</p>
           </div>
 
-          <div className="header__avatar"></div>
+          <div className="header__avatar">
+            <img src={Avatar} alt="avatar" />
+            <p>Alex</p>
+          </div>
         </div>
       </div>
     </header>

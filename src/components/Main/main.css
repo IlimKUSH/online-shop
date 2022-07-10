@@ -1,7 +1,6 @@
 .background {
   background: url("../../img/bg.png") no-repeat;
-  height: 200px;
-  background-size: 100vw;
+  background-size: 100%;
   position: relative;
 }
 .bg__products {

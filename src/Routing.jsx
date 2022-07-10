@@ -11,6 +11,7 @@ import Payment from "./components/Payment/Payment";
 import Fav from "./components/Fav/Fav";
 import Testimonials from "./components/Testimonials/Testimonials";
 
+
 const Routing = () => {
     return (
         <Routes>

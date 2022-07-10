@@ -7,9 +7,6 @@ import ProductContextProvider from "./contexts/productsContext";
 import CartContextProvider from "./contexts/cartContext";
 import TestiContextProvider from "./contexts/testiContext";
 
-// const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-// const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
-
 const App = () => {
   return (
     <>
