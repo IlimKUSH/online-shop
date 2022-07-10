@@ -47,6 +47,9 @@ const Header = () => {
             />
             <img src={Search} alt="search" />
           </div>
+            <img src={Heart} alt="favorite" />
+            <p>Избранное</p>
+          </div>
           <div onClick={() => navigate("/cart")} className="header__ftrs">
             <Badge
               style={{
