@@ -5,15 +5,11 @@ import "./header.css";
 import Logo from "../../img/logo.svg";
 import Search from "../../img/search.svg";
 import Heart from "../../img/heart.svg";
-// import Orders from "../../img/orders.svg";
 import Cart from "../../img/cart.svg";
 import Avatar from "../../img/avatar.svg";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Badge } from "@mui/material";
 import { cartContext } from "../../contexts/cartContext";
-import LoginButton from "../LoginButton";
-import LogoutButton from "../LogoutButton";
-import Profile from "../Profile";
 
 const Header = () => {
   const { count } = useContext(cartContext);

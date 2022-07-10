@@ -8,6 +8,27 @@
   .article__card {
     margin-right: 15px;
   }
+  .shapes__container {
+    position: absolute;
+  }
+  .about {
+    flex-wrap: wrap;
+  }
+  .about__cards {
+    flex-wrap: wrap;
+  }
+  .about__shapes {
+    display: none;
+  }
+  .about__imgs {
+    display: none;
+  }
+  .about__quote {
+    flex-wrap: wrap;
+  }
+  .about__info > h2 {
+    font-size: 55px !important;
+  }
 }
 @media all and (max-width: 1192px) {
   .bg__products {
@@ -26,6 +47,10 @@
   }
   .hero__card {
     margin-bottom: 25px;
+  }
+  .cart__card {
+    width: 100% !important;
+    flex-wrap: wrap !important;
   }
 }
 @media all and (max-width: 1018px) {
@@ -57,9 +82,13 @@
 
   .footer__left {
     justify-content: space-around !important;
+    flex-wrap: wrap !important;
   }
   .container-parent {
     width: auto !important;
+  }
+  .container__name {
+    margin-right: 0 !important;
   }
 }
 @media all and (max-width: 768px) {
@@ -93,6 +122,12 @@
   .hero__card {
     flex-wrap: wrap;
   }
+  .footer__right {
+    margin-top: 15px;
+  }
+  .header__content > * {
+    margin-top: 15px !important;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -107,6 +142,13 @@
   .bg__container > h1 {
     font-size: 25px !important;
   }
+  .about__quote > h3 {
+    margin-left: 0 !important;
+  }
+
+  .container__pay {
+    flex-wrap: wrap;
+  }
 }
 
 @media all and (max-width: 362px) {
@@ -119,9 +161,7 @@
   .header__content {
     justify-content: space-around !important;
   }
-  .header__content > * {
-    margin-top: 10px;
-  }
+
   .bg__products {
     display: none;
   }
