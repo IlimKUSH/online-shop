@@ -12,6 +12,7 @@
 .cart__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .cart__card {
   width: 870px;
