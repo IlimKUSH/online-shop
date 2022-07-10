@@ -8,6 +8,27 @@
   .article__card {
     margin-right: 15px;
   }
+  .shapes__container {
+    position: absolute;
+  }
+  .about {
+    flex-wrap: wrap;
+  }
+  .about__cards {
+    flex-wrap: wrap;
+  }
+  .about__shapes {
+    display: none;
+  }
+  .about__imgs {
+    display: none;
+  }
+  .about__quote {
+    flex-wrap: wrap;
+  }
+  .about__info > h2 {
+    font-size: 55px !important;
+  }
 }
 @media all and (max-width: 1192px) {
   .bg__products {
@@ -57,6 +78,7 @@
 
   .footer__left {
     justify-content: space-around !important;
+    flex-wrap: wrap !important;
   }
   .container-parent {
     width: auto !important;
@@ -93,6 +115,9 @@
   .hero__card {
     flex-wrap: wrap;
   }
+  .footer__right {
+    margin-top: 15px;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -106,6 +131,9 @@
   }
   .bg__container > h1 {
     font-size: 25px !important;
+  }
+  .about__quote > h3 {
+    margin-left: 0 !important;
   }
 }
 
