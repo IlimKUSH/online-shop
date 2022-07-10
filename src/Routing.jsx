@@ -8,20 +8,26 @@ import Details from "./components/Details/Details";
 import AddProduct from "./components/AddProduct/AddProduct";
 import Cart from "./components/Cart/Cart";
 import Payment from "./components/Payment/Payment";
+import Fav from "./components/Fav/Fav";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 const Routing = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contacts" element={<Contacts />} />
-      <Route path="/add" element={<AddProduct />} />
-      <Route path="/edit/:id" element={<EditProduct />} />
-      <Route path="/details/:id" element={<Details />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/payment" element={<Payment />} />
-    </Routes>
-  );
-};
+    return (
+        <Routes>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contacts" element={<Contacts/>}/>
+            <Route path="/add" element={<AddProduct/>}/>
+            <Route path="/edit/:id" element={<EditProduct/>}/>
+            <Route path="/details/:id" element={<Details/>}/>
+            <Route path="/cart" element={<Cart/>}/>
+            <Route path="/payment" element={<Payment/>}/>
+            <Route path="/favourite" element={<Fav/>}/>
+            <Route path="/testi" element={<Testimonials/>}/>
+
+        </Routes>
+    );
+}
+
 
 export default Routing;

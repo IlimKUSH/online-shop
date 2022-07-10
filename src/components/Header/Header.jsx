@@ -45,7 +45,9 @@ const Header = () => {
             />
             <img src={Search} alt="search" />
           </div>
-          <div className="header__ftrs">
+          <div className="header__ftrs"
+          onClick={() => navigate("/favourite")}
+          >
             <img src={Heart} alt="favorite" />
             <p>Избранное</p>
           </div>

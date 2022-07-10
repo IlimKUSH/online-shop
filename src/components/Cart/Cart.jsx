@@ -12,7 +12,6 @@ const Cart = ({ item }) => {
   useEffect(() => {
     getCart();
   }, []);
-  console.log(cart);
   return cart ? (
     <div>
       <div className="container">
@@ -35,7 +34,7 @@ const Cart = ({ item }) => {
         </div>
         <div className="cart">
           <h2>Корзина</h2>
-          <div className="cart__content">
+          <dv className="cart__content">
             <div>
               {cart.products.map(elem => (
                 <div className="cart__card" key={elem.item.id}>
@@ -150,12 +149,12 @@ const Cart = ({ item }) => {
                     бонусов
                   </span>
                 </span>
-                <button className="pay__btn">
+                <button onClick={() => navigate("/payment")} className="pay__btn">
                   <p>Оформить заказ</p>
                 </button>
               </div>
             </div>
-          </div>
+          </dv>
         </div>
       </div>
     </div>

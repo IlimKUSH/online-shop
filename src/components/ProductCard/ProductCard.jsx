@@ -7,6 +7,7 @@ import "./productCard.css";
 const ProductCard = ({ item }) => {
   const { addToCart, checkProductInCart } = React.useContext(cartContext);
 
+
   const navigate = useNavigate();
   const { deleteProduct } = useContext(productsContext);
   const [productState, setProductState] = useState(checkProductInCart(item.id));
@@ -18,7 +19,10 @@ const ProductCard = ({ item }) => {
           <div className="products__img-parent">
             <img className="products__img" src={item.image} alt="" />
             <div className="products__img-child">
-              <svg
+              <svg style={{
+                cursor:'pointer'
+              }} onClick={() => {
+              }}
                 width="22"
                 height="20"
                 viewBox="0 0 22 20"
