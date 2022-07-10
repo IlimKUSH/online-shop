@@ -1,11 +1,12 @@
-import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import favContext from "../../contexts/favContext";
+import React, {useContext, useEffect} from "react";
+import {useNavigate} from "react-router-dom";
+import {favContext} from "../../contexts/favContext";
+import "./Fav.css"
 
-const Cart = ({ item }) => {
+const Cart = ({item}) => {
     const navigate = useNavigate();
 
-    const { getFav, fav, deleteFromFav, changeCount } = useContext(favContext)
+    const {getFav, fav, deleteFromFav} = useContext(favContext)
 
     useEffect(() => {
         getFav();
@@ -32,102 +33,87 @@ const Cart = ({ item }) => {
                 </div>
                 <div className="cart">
                     <h2>Избранное</h2>
-                    <dv className="cart__content">
-                        <div>
+                    <div className="cart__content">
+                        <div style={{
+                            display: 'flex',
+                            flexWrap: 'wrap'
+                        }}
+                        >
                             {fav.products.map(elem => (
-                                <div className="cart__card" key={elem.item.id}>
-                                    <div className="cart__cart-text">
-                                        <img src={elem.item.image} alt="" width="100px" />
-                                        <div className="cart__card-info">
-                                            <p className="super__price">{elem.item.title}</p>
-                                            <p className="sub__price">{elem.item.price} ₽ за шт.</p>
+                                <dv className="favs__container" key={elem.item.id}>
+                                    <div className="fav__container__info">
+                                        <div className="fav__img__parent">
+                                        <img className="fav__img" src={elem.item.image} alt="" width="100px"/>
+                                        </div>
+                                        <div className="fav__info">
+                                            <p className="fav__info__price">{elem.item.price} ₽</p>
+                                            <p className="fav__info__title">{elem.item.title}</p>
                                         </div>
                                     </div>
-                                    <div className="cart__btn">
-                                        <svg
-                                            onClick={() => changeCount(elem.count - 1, elem.item.id)}
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                                                fill="white"
-                                            />
-                                        </svg>
-                                        <p>{elem.count}</p>
-                                        <svg
-                                            onClick={() => changeCount(elem.count + 1, elem.item.id)}
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                                                fill="white"
-                                            />
-                                        </svg>
-                                    </div>
                                     <div>
-                                        <button onClick={() => deleteFromFav(elem.item.id)}>
-                                            delete
-                                        </button>
-                                        <button onClick={() => navigate(`/details/${elem.item.id}`)}>
-                                            info
-                                        </button>
+                                        <svg
+                                            className="product__btn"
+                                            onClick={() => deleteFromFav(elem.item.id)}
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M2.5 6C2.5 5.72386 2.72386 5.5 3 5.5H21C21.2761 5.5 21.5 5.72386 21.5 6C21.5 6.27614 21.2761 6.5 21 6.5H3C2.72386 6.5 2.5 6.27614 2.5 6Z"
+                                                fill="#414141"
+                                            />
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M10 2.5C9.17157 2.5 8.5 3.17157 8.5 4V6C8.5 6.27614 8.27614 6.5 8 6.5C7.72386 6.5 7.5 6.27614 7.5 6V4C7.5 2.61929 8.61929 1.5 10 1.5H14C15.3807 1.5 16.5 2.61929 16.5 4V6C16.5 6.27614 16.2761 6.5 16 6.5C15.7239 6.5 15.5 6.27614 15.5 6V4C15.5 3.17157 14.8284 2.5 14 2.5H10ZM5 5.5C5.27614 5.5 5.5 5.72386 5.5 6V20C5.5 20.8284 6.17157 21.5 7 21.5H17C17.8284 21.5 18.5 20.8284 18.5 20V6C18.5 5.72386 18.7239 5.5 19 5.5C19.2761 5.5 19.5 5.72386 19.5 6V20C19.5 21.3807 18.3807 22.5 17 22.5H7C5.61929 22.5 4.5 21.3807 4.5 20V6C4.5 5.72386 4.72386 5.5 5 5.5Z"
+                                                fill="#414141"
+                                            />
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M10 10.5C10.2761 10.5 10.5 10.7239 10.5 11V17C10.5 17.2761 10.2761 17.5 10 17.5C9.72386 17.5 9.5 17.2761 9.5 17V11C9.5 10.7239 9.72386 10.5 10 10.5Z"
+                                                fill="#414141"
+                                            />
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M14 10.5C14.2761 10.5 14.5 10.7239 14.5 11V17C14.5 17.2761 14.2761 17.5 14 17.5C13.7239 17.5 13.5 17.2761 13.5 17V11C13.5 10.7239 13.7239 10.5 14 10.5Z"
+                                                fill="#414141"
+                                            />
+                                        </svg>
+                                        <svg
+                                            className="product__btn"
+                                            onClick={() => navigate(`/details/${elem.item.id}`)}
+                                            width="30"
+                                            height="30"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M1.5 12C1.5 6.20101 6.20101 1.5 12 1.5C17.799 1.5 22.5 6.20101 22.5 12C22.5 17.799 17.799 22.5 12 22.5C6.20101 22.5 1.5 17.799 1.5 12ZM12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5Z"
+                                                fill="#414141"
+                                            />
+                                            <path
+                                                fillRule="evenodd"
+                                                clipRule="evenodd"
+                                                d="M12 7.5C12.2761 7.5 12.5 7.72386 12.5 8V12C12.5 12.2761 12.2761 12.5 12 12.5C11.7239 12.5 11.5 12.2761 11.5 12V8C11.5 7.72386 11.7239 7.5 12 7.5Z"
+                                                fill="#414141"
+                                            />
+                                            <path
+                                                d="M13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16Z"
+                                                fill="#414141"
+                                            />
+                                        </svg>
                                     </div>
-                                </div>
+                                </dv>
                             ))}
                         </div>
-                        <div className="cart__pay">
-                            <p>
-                                Сумма <span className="sum">{fav.totalPrice} ₽</span>
-                            </p>
-                            <p>
-                                Скидка <span className="dis">{-fav.discount} ₽</span>
-                            </p>
-                            <hr className="cart__line" />
-                            <p>
-                                Итог{" "}
-                                <h3 className="total">{fav.totalPrice - fav.discount} ₽</h3>
-                            </p>
-                            <div className="bonus__payment">
-                <span className="bonus-parent">
-                  <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M23.6883 6.66661H1.31196C0.843143 6.66661 0.460308 7.05823 0.503301 7.52051C0.994639 13.0113 6.17826 17.3333 12.5001 17.3333C18.822 17.3333 24.0056 13.0133 24.497 7.52051C24.5379 7.05823 24.1571 6.66661 23.6883 6.66661Z"
-                        fill="#70C05B"
-                    />
-                  </svg>
-                  Вы получаете{" "}
-                    <span className="bonus">
-                    {Math.ceil((fav.totalPrice - fav.discount) * 0.04)}{" "}
-                        бонусов
-                  </span>
-                </span>
-                                <button onClick={() => navigate("/payment")} className="pay__btn">
-                                    <p>Оформить заказ</p>
-                                </button>
-                            </div>
-                        </div>
-                    </dv>
+                    </div>
                 </div>
             </div>
         </div>

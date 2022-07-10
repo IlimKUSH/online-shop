@@ -80,7 +80,7 @@ const FavContextProvider = ({children}) => {
             };
         }
         fav.products = fav.products.filter(item => item.item.id !== id);
-        localStorage.setItem("cart", JSON.stringify(fav));
+        localStorage.setItem("fav", JSON.stringify(fav));
         getFav();
     }
 

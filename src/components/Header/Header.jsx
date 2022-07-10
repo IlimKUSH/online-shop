@@ -17,7 +17,7 @@ const Header = () => {
   const [searchParam, setSearchParam] = useSearchParams();
 
   const [search, setSearch] = useState(
-    searchParam.get("q") ? searchParam.get("q") : ""
+      searchParam.get("q") ? searchParam.get("q") : ""
   );
 
   const navigate = useNavigate();
@@ -29,38 +29,42 @@ const Header = () => {
   }, [search]);
 
   return (
-    <header className="header">
-      <div className="container">
-        <div className="header__content">
-          <img onClick={() => navigate("/")} src={Logo} alt="logo" />
-          <div className="header__search">
-            <input
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              type="text"
-              placeholder="Найти товар"
-            />
-            <img src={Search} alt="search" />
-          </div>
-          <img src={Heart} alt="favorite" />
-          <p>Избранное</p>
-          <div onClick={() => navigate("/cart")} className="header__ftrs">
-            <Badge
-              style={{
-                padding: "0 0 5px 25px",
-              }}
-              badgeContent={count}
-              color="error"></Badge>
-            <img src={Cart} alt="cart" />
-            <p>Корзина</p>
-          </div>
-          <div className="header__avatar">
-            <img src={Avatar} alt="avatar" />
-            <p>Alex</p>
+      <header className="header">
+        <div className="container">
+          <div className="header__content">
+            <img onClick={() => navigate("/")} src={Logo} alt="logo" />
+            <div className="header__search">
+              <Profile />
+              <input
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  type="text"
+                  placeholder="Найти товар"
+              />
+              <img src={Search} alt="search" />
+            </div>
+            <div className="header__ftrs" onClick={() => navigate("/favourite")}>
+              <img src={Heart} alt=""/>
+              <p>Избранное</p>
+            </div>
+            <div onClick={() => navigate("/cart")} className="header__ftrs">
+              <Badge
+                  style={{
+                    padding: "0 0 5px 25px",
+                  }}
+                  badgeContent={count}
+                  color="error"></Badge>
+              <img src={Cart} alt="cart" />
+              <p>Корзина</p>
+            </div>
+
+            <div className="header__avatar">
+              <img src={Avatar} alt="avatar" />
+              <p>Alex</p>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
   );
 };
 

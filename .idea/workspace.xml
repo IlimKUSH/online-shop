@@ -2,22 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07bb64d0-a224-4f6c-8b4d-b98afa4dc82f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Fav/Fav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testimonials/CommentCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testimonials/Comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Testimonials/Testimonials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/testiContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Fav/Fav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Fav/Fav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Fav/Fav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonials/Comments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Testimonials/Testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Testimonials/Testimonials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/favContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/favContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -80,7 +77,7 @@
       <updated>1656914838267</updated>
       <workItem from="1656914839396" duration="523000" />
       <workItem from="1656917833175" duration="5189000" />
-      <workItem from="1656931817190" duration="65542000" />
+      <workItem from="1656931817190" duration="72690000" />
     </task>
     <servers />
   </component>

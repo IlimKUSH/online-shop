@@ -3,14 +3,18 @@ import { useNavigate } from "react-router-dom";
 import { cartContext } from "../../contexts/cartContext";
 import { productsContext } from "../../contexts/productsContext";
 import "./productCard.css";
+import {favContext} from "../../contexts/favContext";
 
 const ProductCard = ({ item }) => {
   const { addToCart, checkProductInCart } = React.useContext(cartContext);
+
+  const {addToFav, checkProductInFav} = useContext(favContext)
 
 
   const navigate = useNavigate();
   const { deleteProduct } = useContext(productsContext);
   const [productState, setProductState] = useState(checkProductInCart(item.id));
+  const [favState,setFavState] = useState(checkProductInFav(item.id));
 
   return (
     <div>
@@ -20,8 +24,14 @@ const ProductCard = ({ item }) => {
             <img className="products__img" src={item.image} alt="" />
             <div className="products__img-child">
               <svg style={{
-                cursor:'pointer'
+                cursor:'pointer',
+                border: favState
+                    ? "1px solid #FF6633"
+                    : "1px solid #70c05b",
+                color: favState ? "red" : "#70c05b",
               }} onClick={() => {
+                addToFav(item);
+                setFavState(checkProductInFav(item.id));
               }}
                 width="22"
                 height="20"
