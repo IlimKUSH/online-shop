@@ -10,6 +10,9 @@ import Avatar from "../../img/avatar.svg";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Badge } from "@mui/material";
 import { cartContext } from "../../contexts/cartContext";
+import LoginButton from "../LoginButton";
+import LogoutButton from "../LogoutButton";
+import Profile from "../Profile";
 
 const Header = () => {
   const { count } = useContext(cartContext);
@@ -55,8 +58,12 @@ const Header = () => {
             <p>Корзина</p>
           </div>
           <div className="header__avatar">
-            <img src={Avatar} alt="avatar" />
-            <p>Alex</p>
+            <LoginButton />
+            <LogoutButton />
+            <Profile />
+
+            {/* <img src={Avatar} alt="avatar" />
+            <p>Alex</p> */}
           </div>
         </div>
       </div>
