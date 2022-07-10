@@ -5,9 +5,11 @@ import Routing from "./Routing";
 import Footer from "./components/Footer/Footer";
 import ProductContextProvider from "./contexts/productsContext";
 import CartContextProvider from "./contexts/cartContext";
+import TestiContextProvider from "./contexts/testiContext";
 
 const App = () => {
   return (
+      <TestiContextProvider>
     <CartContextProvider>
       <ProductContextProvider>
         <BrowserRouter>
@@ -17,6 +19,7 @@ const App = () => {
         </BrowserRouter>
       </ProductContextProvider>
     </CartContextProvider>
+      </TestiContextProvider>
   );
 };
 

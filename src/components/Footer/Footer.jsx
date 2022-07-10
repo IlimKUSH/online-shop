@@ -22,7 +22,7 @@ const Footer = () => {
               <p onClick={() => navigate("/about")}>О компании</p>
               <p onClick={() => navigate("/contacts")}>Контакты</p>
               <p>Вакансии</p>
-              <p>Политика обработки персональных данных</p>
+              <p onClick={() => navigate("/testi")}>Отзывы</p>
             </div>
             <div className="footer__right">
               <a href="#">
